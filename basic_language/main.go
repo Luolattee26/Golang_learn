@@ -34,6 +34,13 @@ init可以应用于任意包中，且可以重复定义多个；main函数只能
 // 像一些“没有实际行为”的语句，比如声明变量、函数、结构体，是可以放在函数体外面的
 var n int
 
+/*
+go 变量、函数的命名谷歌说最好用驼峰命名法
+也就是单词大写小写混合这种
+第一个单词小写后面全首字母大写————变量，addAdmin
+全部单词都首字母大写————函数、结构体等，AdminModel
+*/
+
 func main() { // go语言中花括号必须跟在东西后面，不能单独一行
 	fmt.Println("hello it's my first go code") // fmt.Println这函数就是在终端进行输出，和print一样
 	hello.SayHi()
